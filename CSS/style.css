@@ -17,3 +17,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+#result-container {
+  border: solid 1px;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}

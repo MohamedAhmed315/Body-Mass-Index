@@ -1,6 +1,13 @@
-var hight = 0;
-var weight = 0;
-
 function body_index() {
-    hight = document.getElementById("hight").value
+    var hight = parseInt(document.getElementById("hight").value);
+    var weight = parseInt(document.getElementById("weight").value);
+    hight = Math.pow((hight / 100), 2);
+    var mass = Math.floor(weight / hight);
+    document.getElementById("result").innerHTML = mass.toString();
+    // return mass;
+}
+function clearData() {
+    document.getElementById("hight").value = "";
+    document.getElementById("weight").value = "";
+    document.getElementById("result").innerHTML = "0";
 }

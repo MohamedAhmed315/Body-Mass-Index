@@ -17,18 +17,20 @@
   <div class="container">
     <h2>Body Mass Index</h2>
       <div class="form-group">
-        <label> Weight:</label>
+        <label> Weight (kg):</label>
         <input type="number" class="form-control" id="weight" placeholder="Enter  weight (kg)" oninput="validity.valid||(value='');">
       </div>
       <div class="form-group">
-        <label>Hight:</label>
+        <label>Hight (cm):</label>
         <input type="number" class="form-control" id="hight" placeholder="Enter Hight (cm)" oninput="validity.valid||(value='');">
       </div>
 
-      <button type="button" class="btn btn-primary">Calculate</button>
+      <button type="button" class="btn btn-primary" onclick="body_index()">Calculate</button>
+      <button id="btn-clear" type="button" class="btn btn-secondary" onclick="clearData();">Clear</button>
 
-      <div id="result">
-        
+      <div id="result-container">
+        <h4>Body weight Index:</h4>
+        <h4 id="result">0</h4>
       </div>
     </div>
 </body>
